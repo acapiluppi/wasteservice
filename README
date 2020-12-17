@@ -1,0 +1,18 @@
+# Waste Service data and scripts
+This project holds the scripts and the data that were used to populate the 
+Waste Service paper. The resulting components that were extracted are now 
+available at the [Waste Service](http://wasteservice.github.io) online 
+repository.
+
+- the first step is to **isolate the components**: we do that by invoking 
+the *streamline_Infomap.sh*script. It uses the CLI of the [Scitools 
+Understand](https://licensing.scitools.com/download) analyzer, to extract the 
+hard dependencies between Java classes. Afterwards, the script makes use of the 
+[Infomap](https://www.mapequation.org/infomap/#Install) tool to extract the 
+components as communities, based on the dependencies between classes.
+
+- The second step is to extract the quality metrics. The *streamline_OO.sh* 
+script uses the CLI of the 
+[Scitools Understand](https://licensing.scitools.com/download) analyzer, and 
+its accompanying file *core.xml*, to extract the OOmetrics that serve as a 
+comparison between batches of projects. 
